@@ -1,6 +1,14 @@
 # Minimal Starter with Angular on both Server and Browser Platforms
 
-## Get Started
+# Preboot + Uglify (suports ES6) + Gzip included
+
+## Install dependencies
+Get [Yarn](https://yarnpkg.com)
+```sh
+yarn install
+```
+
+## Get started
 ```sh
 npm run start
 ```
