@@ -28,6 +28,9 @@ module.exports = function (options, webpackOptions) {
 
   if (webpackOptions.p) {
     clientConfig = webpackMerge({}, clientConfig, prodPartial);
+  } else {
+    // Breaks on uglify in prod
+    clientConfig.devTool = 'source-map';
   }
 
   const configs = [];

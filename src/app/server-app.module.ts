@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { AppModule } from './app.module';
 import { TransferState } from '../modules/transfer-state/transfer-state';
 import { BrowserModule } from '@angular/platform-browser';
+import { ServerPrebootModule } from 'preboot';
 
 export function onBootstrap(appRef: ApplicationRef, transferState: TransferState) {
   return () => {
@@ -36,7 +37,8 @@ export function onBootstrap(appRef: ApplicationRef, transferState: TransferState
     }),
     ServerModule,
     ServerTransferStateModule,
-    AppModule
+    AppModule,
+    ServerPrebootModule.recordEvents({ appRoot: 'app-root' })
   ]
 })
 export class ServerAppModule {

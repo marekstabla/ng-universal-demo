@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core'
 import { TransferState } from '../modules/transfer-state/transfer-state';
 
 @Component({
-  selector: 'demo-app',
+  selector: 'app-root',
   template: `
     <h1>Universal Demo</h1>
     <a routerLink="/">Home</a>
