@@ -1,6 +1,6 @@
 # Minimal Starter with Angular on both Server and Browser Platforms
 
-# Preboot + Uglify (suports ES6) + Gzip included
+## Preboot + Uglify (suports ES6) + Gzip included
 
 ## Install dependencies
 Get [Yarn](https://yarnpkg.com)
